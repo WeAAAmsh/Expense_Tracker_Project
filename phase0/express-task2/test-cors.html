@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test CORS</title>
+</head>
+<body>
+    <h1>Testing CORS</h1>
+    <button id="btn">Fetch Expenses</button>
+    <pre id="output"></pre>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const output = document.getElementById("output");
+
+        btn.addEventListener("click", async () => {
+            try {
+                const res = await fetch("http://localhost:3000/api/expenses");
+                const data = await res.json();
+                output.textContent = JSON.stringify(data, null, 2);
+            } catch (err) {
+                output.textContent = "Error: " + err.message;
+            }
+        });
+    </script>
+</body>
+</html>
