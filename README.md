@@ -99,13 +99,13 @@ DELETE	/api/expenses/:id	Delete an expense
 
 ## Screenshots
 ## Light Mode
-![Light Mode](Screenshots/LightMode.png)
+![Light Mode](screenshots/Screenshots/LightMode.png)
 ## Dark Mode
-![Dark Mode](Screenshots/DarkMode.png)
+![Dark Mode](screenshots/Screenshots/DarkMode.png)
 ### Mobile View
-![Mobile 1](Screenshots/phone.png)
-![Mobile 2](Screenshots/phone2.png)
-![Mobile 3](Screenshots/phone3.png)
+![Mobile 1](screenshots/Screenshots/phone.png)
+![Mobile 2](screenshots/Screenshots/phone2.png)
+![Mobile 3](screenshots/Screenshots/phone3.png)
 
 ### Challenges
 The hardest part was connecting the frontend to the backend using fetch and handling CORS errors. I learned how to enable CORS on the server with the cors package, and how to use async/await with try/catch to handle errors gracefully.
